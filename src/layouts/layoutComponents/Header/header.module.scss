@@ -1,0 +1,126 @@
+.wrapper {
+    --header-width: var(--layout-width);
+
+    --search-container-width: 490px;
+    --search-container-height: 46px;
+    --search-container-radius: 92px;
+
+    --search-btn-width: 52px;
+    --search-btn-after-height: 28px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    background-color: var(--white-color);
+}
+
+.user-action {
+    z-index: 9999+1;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--header-width);
+    height: var(--header-height);
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.logo > * {
+    display: flex;
+}
+
+// Action
+.action-container {
+    display: flex;
+    align-items: center;
+}
+
+.upload-icon {
+    vertical-align: middle; 
+    margin-bottom: 4px;
+    height: 20px;
+    margin-right: 4px;
+    width: 20px;
+}
+
+.upload-btn {
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid rgba(22, 24, 35, .12);
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    padding: 0 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 1px;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+}
+
+.see-more-btn {
+    font-size: 2rem;
+    padding: 2px 4px;
+    margin-left: 16px;
+    background-color: transparent;
+}
+
+// Action user
+.user-action-icon {
+    position: relative;
+    background-color: transparent;
+    margin-left: 16px;
+    line-height: 0;
+
+    &.plane-icon {
+        padding: 3px;
+    }
+
+    .notify {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        background-color: var(--primary-color);
+        color: white;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(25%, -25%);
+    }
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    margin-left: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.user-sidebar-avatar {
+    width: 1em; // Match the width and height to the SVG
+    height: 1em;
+    display: inline-block;
+    background-color: currentColor; // Use current color for consistency with iconLive
+    border-radius: 50%; // Ensure the image is circular like an SVG icon might be
+    overflow: hidden; // Ensures no part of the image exceeds the container
+    object-fit: cover; // Ensures the image scales nicely within the circular container
+  }

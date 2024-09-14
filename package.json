@@ -18,12 +18,14 @@
         "prop-types": "^15.8.1",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
+        "react-intersection-observer": "^9.13.1",
         "react-router-dom": "^6.3.0",
         "react-scripts": "5.0.1",
         "tippy.js": "^6.3.7",
         "web-vitals": "^2.1.4"
     },
     "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "ajv": "^7.2.4",
         "babel-plugin-module-resolver": "^4.1.0",
         "customize-cra": "^1.0.0",

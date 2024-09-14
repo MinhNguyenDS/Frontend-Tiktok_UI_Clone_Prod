@@ -1,15 +1,18 @@
 import { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from '~/routes';
-import DefaultLayout from '~/layouts';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { publicRoutes } from './routes';
+import { DefaultLayout } from './layouts';
 
 function App() {
     return (
-        <Router>
+        <BrowserRouter>
             <div className="App">
                 <Routes>
                     {publicRoutes.map((route, index) => {
+                        // Component
                         const Page = route.component;
+
+                        // Layout
                         let Layout = DefaultLayout;
 
                         if (route.layout) {
@@ -23,16 +26,20 @@ function App() {
                                 key={index}
                                 path={route.path}
                                 element={
-                                    <Layout>
+                                    route.path !== '/home' ? (
+                                        <Layout>
+                                            <Page />
+                                        </Layout>
+                                    ) : (
                                         <Page />
-                                    </Layout>
+                                    )
                                 }
                             />
                         );
                     })}
                 </Routes>
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
