@@ -1,12 +1,15 @@
 import axios from 'axios';
 
-const httpRequest = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+const request = axios.create({
+    baseURL: process.env.REACT_APP_API_BASE_URL,
 });
 
 export const get = async (path, options = {}) => {
-    const response = await httpRequest.get(path, options);
-    return response.data;
-};
+    try {
+        const response = await request.get(path, options);
 
-export default httpRequest;
+        return response.data;
+    } catch (err) {
+        console.log('Failed to get: ', err);
+    }
+};

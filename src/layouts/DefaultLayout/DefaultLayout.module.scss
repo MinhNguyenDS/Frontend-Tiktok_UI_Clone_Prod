@@ -1,17 +1,18 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    --layout-width: 100%;
 }
 
 .container {
-    width: var(--default-layout-width);
-    max-width: 100%;
-    padding: 0 var(--default-layout-horizontal-spacer);
-    margin-top: var(--default-layout-header-height);
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    margin-top: var(--header-height);
     display: flex;
+    justify-content: center;
+    .content {
+        flex: 1 1 auto;
+        margin: 0 16px;
+        margin-left: calc(60% - var(--layout-width) / 2);
+        margin-right: calc(70% - var(--layout-width) / 2);
+    }
 }
 
-.content {
-    flex: 1;
-}

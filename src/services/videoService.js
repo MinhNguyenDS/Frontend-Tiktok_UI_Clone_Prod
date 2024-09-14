@@ -1,12 +1,12 @@
 import { httpRequest } from '~/utils';
 
-const path = 'users/search';
+const path = 'videos';
 
-export const search = async (keyword, type = 'less') => {
+export const getSuggestVideo = async (page, type = 'for-you') => {
     const dataResponse = await httpRequest.get(path, {
         params: {
-            q: keyword,
-            type
+            type,
+            page,
         },
     });
     return dataResponse.data;

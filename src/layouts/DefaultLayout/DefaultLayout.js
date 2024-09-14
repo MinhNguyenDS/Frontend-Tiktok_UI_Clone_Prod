@@ -1,12 +1,18 @@
-import PropTypes from 'prop-types';
+import { useContext } from 'react'
+
 import classNames from 'classnames/bind';
-import Header from '~/layouts/components/Header';
-import Sidebar from '~/layouts/components/Sidebar';
-import styles from './DefaultLayout.module.scss';
+import styles from './defaultLayout.module.scss';
+import { Header, Sidebar } from '../layoutComponents';
+import DownloadApp from '~/components/DownloadApp';
+import { ModalContext } from '~/components/ModalProvider'
+import ModalForm from '~/components/ModalForm'
 
 const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
+
+    const context = useContext(ModalContext)
+
     return (
         <div className={cx('wrapper')}>
             <Header />
@@ -14,12 +20,11 @@ function DefaultLayout({ children }) {
                 <Sidebar />
                 <div className={cx('content')}>{children}</div>
             </div>
+            <DownloadApp />
+
+            {context.active && <ModalForm onHide={context.handleHideModal} />}
         </div>
     );
 }
-
-DefaultLayout.propTypes = {
-    children: PropTypes.node.isRequired,
-};
 
 export default DefaultLayout;
