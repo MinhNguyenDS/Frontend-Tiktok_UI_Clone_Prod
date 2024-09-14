@@ -1,24 +1,29 @@
-import config from '~/config';
+// import { HeaderOnly } from '~/layouts';
+// import { Home, Following, Explore, Upload, Profile, Live, Search, HomePhone } from '~/Pages';
 
-// Layouts
-import { HeaderOnly } from '~/layouts';
 
-// Pages
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
-import Profile from '~/pages/Profile';
+import Explore from '~/pages/Explore';
 import Upload from '~/pages/Upload';
-import Search from '~/pages/Search';
+import Profile from '~/pages/Profile';
 import Live from '~/pages/Live';
+import Search from '~/pages/Search';
+import HomePhone from '~/pages/PhoneUI';
 
-// Public routes
+
+
+import configs from '~/configs';
+
 const publicRoutes = [
-    { path: config.routes.home, component: Home },
-    { path: config.routes.following, component: Following },
-    { path: config.routes.live, component: Live },
-    { path: config.routes.profile, component: Profile },
-    { path: config.routes.upload, component: Upload, layout: HeaderOnly },
-    { path: config.routes.search, component: Search, layout: null },
+    { path: configs.routes.home, component: Home },
+    { path: configs.routes.homePhone, component: HomePhone },
+    { path: configs.routes.following, component: Following },
+    { path: configs.routes.explore, component: Explore },
+    { path: configs.routes.search, component: Search },
+    { path: configs.routes.profile, component: Profile },
+    { path: configs.routes.upload, component: Upload, layout: null },
+    { path: configs.routes.live, component: Live },
 ];
 
 const privateRoutes = [];
