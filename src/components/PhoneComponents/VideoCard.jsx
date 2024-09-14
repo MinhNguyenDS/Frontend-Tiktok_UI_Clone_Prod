@@ -9,13 +9,19 @@ const VideoCard = (props) => {
 
   useEffect(() => {
     if (autoplay) {
-      videoRef.current.play();
+      videoRef.current.play().catch((error) => {
+        // Handle the play() error
+        console.log("Autoplay play() error: ", error.message);
+      });
     }
   }, [autoplay]);
 
   const onVideoPress = () => {
     if (videoRef.current.paused) {
-      videoRef.current.play();
+      videoRef.current.play().catch((error) => {
+        // Handle the play() error
+        console.log("Autoplay play() error: ", error.message);
+      });
     } else {
       videoRef.current.pause();
     }

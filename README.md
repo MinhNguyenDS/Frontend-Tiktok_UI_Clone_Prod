@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# <div align="center">TikTok UI Clone</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### <div align="center">A clone of the TikTok app layout for both Mobile and Web.</div>
 
-## Available Scripts
+#### <div align="center">[Live Demo](https://tik-tok-ui-clone-shemmee.vercel.app)</div>
 
-In the project directory, you can run:
+The TikTok UI Clone is a web application built with React.js, CSS, and TSX. It offers a fluid and engaging browsing experience, closely replicating TikTok's user interface, enabling users to watch videos in a TikTok-like format with easy navigation.
+### Web Interface
 
-### `npm start`
+![Web](https://github.com/s-shemmee/TikTok-UI-Clone/assets/56132945/353e9840-edc3-40fa-9e36-ec66b113738e)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Mobile Interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Mobile](https://github.com/s-shemmee/TikTok-UI-Clone/assets/56132945/353e9840-edc3-40fa-9e36-ec66b113738e)
 
-### `npm test`
+# Features
+- Explore and watch videos in a TikTok-style format.
+- Seamless and responsive video playback experience.
+- Simple, user-friendly interface with easy navigation.
+- Infinite scrolling for uninterrupted video exploration.
+- Interact with videos through like, comment, and share options.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Technology
+-   ⚛️ Create React App for the frontend.
+    - 📝 Using TypeScript.
+    - 🎨 Hooks.
+    - 💻 SASS.
+    - 🧪 React.js.
+-   🖥️ VS Code for development and production.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# How To Use It
+To use this TikTok UI Clone, you'll need [Git](https://git-scm.com), [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) v1 or higher, [Npm](https://www.npmjs.com/) v1.13 or higher, and [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) installed on your computer. Follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Step 1: Clone the repository or download the source code.
+```bash
+# Get repository
+$ git clone https://github.com/MinhNguyenDS/Frontend-Tiktok_UI_Clone.git
+```
+- Step 2: Open the project in your preferred code editor.
+```bash
+# Go into the repository
+$ cd tiktok-clone
+```
+- Step 3: Install the necessary dependencies.
+```bash
+# Install dependencies
+$ npm install
+```
+- Step 4: Start the development server.
+```bash
+# Run the app
+$ npm start
+```
+- Step 5: Open your browser and navigate to `http://localhost:3000` to access the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Credits
+The TikTok UI Clone was created by [MinhNguyenDS](https://github.com/MinhNguyenDS).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Reference
+This code is based on [Tiktok-UI-mobile](https://github.com/s-shemmee/TikTok-UI-Clone) and [Tiktok-UI-web](https://github.com/sondnpt00343/tiktok-ui).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# License
+This project is licensed under the [MIT License](https://github.com/MinhNguyenDS/recscratch/blob/Master/LICENSE).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    MIT License
 
-## Learn More
+    Copyright (c) 2023 Minh Hoàng Nguyễn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.

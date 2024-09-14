@@ -1,13 +1,13 @@
-import classNames from 'classnames/bind'
-import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import classNames from 'classnames/bind';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-import * as searchService from '~/services/searchService'
-import styles from './Search.module.scss'
-import { ChevronDownIcon } from '~/components/Icons'
+import * as searchService from '~/services/searchService';
+import styles from './Search.module.scss';
+import { ChevronDownIcon } from '~/components/Icons';
 import SearchAccounts from '~/components/Items/SearchAccountItem';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 function Search() {
     const [searchResults, setSearchResults] = useState([])
@@ -15,6 +15,7 @@ function Search() {
 
     const location = useLocation()
 
+    console.log("location.state", location.state)
     useEffect(() => {
         const fetchAPI = async () => {
             const result = await searchService.search(location.state, 'more')

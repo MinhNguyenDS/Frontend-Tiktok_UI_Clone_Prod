@@ -41,7 +41,12 @@ const SuggestVideoControl = forwardRef(({ videoId, videoInfo, isInView }, REF) =
 
     useEffect(() => {
         playing && setDefaultStatus(false);
-        playing ? videoRef.current.play() : videoRef.current.pause();
+        playing
+            ? videoRef.current.play().catch((error) => {
+                  // Handle the play() error
+                  console.log('Autoplay play() error: ', error.message);
+              })
+            : videoRef.current.pause();
     }, [playing]);
 
     useEffect(() => {

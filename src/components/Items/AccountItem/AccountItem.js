@@ -48,6 +48,9 @@ function AccountItem({ accountInfo, hoverActivate = false, customTippy }) {
 
     return (
         <CompWrapper {...compProps}>
+            <Link to={`/@${accountInfo.nickname}`} state={accountInfo}>
+                <div className={cx('search-result__see-full')}>Xem tất cả kết quả dành cho "{accountInfo.nickname}"</div>
+            </Link>
             <Link to={`/@${accountInfo.nickname}`} className={cx('wrapper')} state={accountInfo}>
                 <Img className={cx('avatar')} src={avatarUrl} alt={fullName} />
                 <div className={cx('body')}>

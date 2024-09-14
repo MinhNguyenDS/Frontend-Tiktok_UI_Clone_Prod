@@ -1,12 +1,13 @@
 {
-  "plugins": [
-    [
-      "module-resolver",
-      {
-        "alias": {
-          "~": "./src"
-        }
-      }
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "~": "./src"
+                }
+            }
+        ],
+        ["macros"]
     ]
-  ]
 }
